@@ -83,7 +83,7 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
         let searchBar = searchController.searchBar
-        print("searchbar text is \(String(describing: searchBar.text))")
+//        print("searchbar text is \(String(describing: searchBar.text))")
     }
     
     
