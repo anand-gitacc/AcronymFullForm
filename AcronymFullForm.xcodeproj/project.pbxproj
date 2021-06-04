@@ -23,6 +23,7 @@
 		2A46F3962667B35600699831 /* AcronymListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A46F3942667B35600699831 /* AcronymListTableViewCell.xib */; };
 		2A46F3AD2668E34B00699831 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A46F3AC2668E34B00699831 /* NetworkManager.swift */; };
 		2A46F3BE266A911100699831 /* AcronymFullFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A46F3BD266A911100699831 /* AcronymFullFormTests.swift */; };
+		2AD018FD266AAC8E000C34F3 /* AcronymViewModelUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD018FC266AAC8E000C34F3 /* AcronymViewModelUnitTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		2A46F3BB266A911100699831 /* AcronymFullFormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcronymFullFormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A46F3BD266A911100699831 /* AcronymFullFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymFullFormTests.swift; sourceTree = "<group>"; };
 		2A46F3BF266A911100699831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AD018FC266AAC8E000C34F3 /* AcronymViewModelUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymViewModelUnitTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				2A46F3BD266A911100699831 /* AcronymFullFormTests.swift */,
 				2A46F3BF266A911100699831 /* Info.plist */,
+				2AD018FC266AAC8E000C34F3 /* AcronymViewModelUnitTest.swift */,
 			);
 			path = AcronymFullFormTests;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD018FD266AAC8E000C34F3 /* AcronymViewModelUnitTest.swift in Sources */,
 				2A46F3BE266A911100699831 /* AcronymFullFormTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
