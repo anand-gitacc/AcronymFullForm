@@ -22,7 +22,18 @@
 		2A46F3952667B35600699831 /* AcronymListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A46F3932667B35600699831 /* AcronymListTableViewCell.swift */; };
 		2A46F3962667B35600699831 /* AcronymListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A46F3942667B35600699831 /* AcronymListTableViewCell.xib */; };
 		2A46F3AD2668E34B00699831 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A46F3AC2668E34B00699831 /* NetworkManager.swift */; };
+		2A46F3BE266A911100699831 /* AcronymFullFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A46F3BD266A911100699831 /* AcronymFullFormTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A46F3C0266A911100699831 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A46F34E26669E6500699831 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A46F35526669E6500699831;
+			remoteInfo = AcronymFullForm;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2A46F35626669E6500699831 /* AcronymFullForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcronymFullForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,10 +53,20 @@
 		2A46F3932667B35600699831 /* AcronymListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymListTableViewCell.swift; sourceTree = "<group>"; };
 		2A46F3942667B35600699831 /* AcronymListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcronymListTableViewCell.xib; sourceTree = "<group>"; };
 		2A46F3AC2668E34B00699831 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2A46F3BB266A911100699831 /* AcronymFullFormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcronymFullFormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A46F3BD266A911100699831 /* AcronymFullFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymFullFormTests.swift; sourceTree = "<group>"; };
+		2A46F3BF266A911100699831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2A46F35326669E6500699831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A46F3B8266A911100699831 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				2A46F35826669E6500699831 /* AcronymFullForm */,
+				2A46F3BC266A911100699831 /* AcronymFullFormTests */,
 				2A46F35726669E6500699831 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				2A46F35626669E6500699831 /* AcronymFullForm.app */,
+				2A46F3BB266A911100699831 /* AcronymFullFormTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +149,15 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		2A46F3BC266A911100699831 /* AcronymFullFormTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A46F3BD266A911100699831 /* AcronymFullFormTests.swift */,
+				2A46F3BF266A911100699831 /* Info.plist */,
+			);
+			path = AcronymFullFormTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +178,24 @@
 			productReference = 2A46F35626669E6500699831 /* AcronymFullForm.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2A46F3BA266A911100699831 /* AcronymFullFormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A46F3C4266A911200699831 /* Build configuration list for PBXNativeTarget "AcronymFullFormTests" */;
+			buildPhases = (
+				2A46F3B7266A911100699831 /* Sources */,
+				2A46F3B8266A911100699831 /* Frameworks */,
+				2A46F3B9266A911100699831 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A46F3C1266A911100699831 /* PBXTargetDependency */,
+			);
+			name = AcronymFullFormTests;
+			productName = AcronymFullFormTests;
+			productReference = 2A46F3BB266A911100699831 /* AcronymFullFormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -157,6 +207,10 @@
 				TargetAttributes = {
 					2A46F35526669E6500699831 = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					2A46F3BA266A911100699831 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 2A46F35526669E6500699831;
 					};
 				};
 			};
@@ -174,6 +228,7 @@
 			projectRoot = "";
 			targets = (
 				2A46F35526669E6500699831 /* AcronymFullForm */,
+				2A46F3BA266A911100699831 /* AcronymFullFormTests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +242,13 @@
 				2A46F3962667B35600699831 /* AcronymListTableViewCell.xib in Resources */,
 				2A46F36326669E6900699831 /* Assets.xcassets in Resources */,
 				2A46F36126669E6500699831 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A46F3B9266A911100699831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +273,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2A46F3B7266A911100699831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A46F3BE266A911100699831 /* AcronymFullFormTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A46F3C1266A911100699831 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A46F35526669E6500699831 /* AcronymFullForm */;
+			targetProxy = 2A46F3C0266A911100699831 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2A46F35F26669E6500699831 /* Main.storyboard */ = {
@@ -387,6 +465,46 @@
 			};
 			name = Release;
 		};
+		2A46F3C2266A911200699831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2333Y4VUX;
+				INFOPLIST_FILE = AcronymFullFormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-.AcronymFullFormTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AcronymFullForm.app/AcronymFullForm";
+			};
+			name = Debug;
+		};
+		2A46F3C3266A911200699831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2333Y4VUX;
+				INFOPLIST_FILE = AcronymFullFormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-.AcronymFullFormTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AcronymFullForm.app/AcronymFullForm";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,6 +522,15 @@
 			buildConfigurations = (
 				2A46F36B26669E6900699831 /* Debug */,
 				2A46F36C26669E6900699831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A46F3C4266A911200699831 /* Build configuration list for PBXNativeTarget "AcronymFullFormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A46F3C2266A911200699831 /* Debug */,
+				2A46F3C3266A911200699831 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

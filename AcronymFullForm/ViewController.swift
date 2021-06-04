@@ -96,6 +96,9 @@ extension ViewController: UISearchBarDelegate{
         guard let searchtext = searchBar.text else {
             return
         }
+        if !acronymViewModel.validateEnteredAcronym(acronym: searchtext) {
+            return
+        }
         acronymViewModel.fetchAcronymFullForm(for: searchtext)
     }
 }
